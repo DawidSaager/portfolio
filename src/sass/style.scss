@@ -32,7 +32,7 @@ a{
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-color: #e9c46a;
+	background-color: #264653;
 	z-index: 100;
 	&__box {
 		display: flex;
@@ -43,7 +43,7 @@ a{
 	}
 
 	&__logo-item {
-		color: #264653;
+		color: #e9c46a;
 		text-transform: uppercase;
 		font-size: 2.5rem;
 		font-weight: bold;
@@ -60,7 +60,7 @@ a{
 		align-items: center;
 		height: 100vh;
 		width: 100%;
-		background-color: #e9c46a;
+		background-color: #264653;
 		transform: translateX(100%);
 		transition: 0.5s;
 		z-index: 1;
@@ -69,16 +69,16 @@ a{
 		}
 	}
 	&__item {
-		padding: 1em 0;
+		padding: .5em 0;
 		margin-bottom: 0.2em;
 		width: 100%;
 		text-align: center;
 		text-transform: uppercase;
 		font-weight: bold;
-		font-size: 3rem;
-		color: #023047;
+		font-size: 2.5rem;
+		color: #e9c46a;
 		&:hover{
-			background-color: #e76f51;
+			background-color: #2a9d8f;
 		}
 	}
 	.burger-btn {
@@ -106,7 +106,7 @@ a{
 			height: 3px;
 			content: '';
 			transition: width 0.3s;
-			background-color: #264653;
+			background-color: #e9c46a;
 		}
 		&__bars {
 			width: 100%;
@@ -130,7 +130,7 @@ a{
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	&__text{
+	&__box{
 		position: absolute;
 		display: flex;
 		flex-direction: column;
@@ -139,22 +139,37 @@ a{
 		height: 100%;
 		padding: 1em;
 		font-family: 'Dancing Script', cursive;
+		color: white;
 		z-index: 1;
 	}
 	&__paragraph{
+		// color:#f4a261;
 		font-size: 4rem;
 		
 		&--name{
-			color:#e76f51;
 			font-weight: bold;
 			margin-bottom: .5em;
 
 		}
 	}
 	&__heading{
+		// color: #e9c46a;
 		font-size: 1.8rem;
 		font-family: 'Roboto Mono', monospace;
+		margin-bottom: 1em;
 	}
+
+	&__button{
+		align-self: flex-start;
+		border: none;
+		border-radius: 8px;
+		background-color: #E9C46A;
+		color:#253b43;
+		font-size: 1.8rem;
+		font-weight: bold;
+		padding: .7em 1em;
+	}
+
 	&__bg{
 		position: absolute;
 		top: 0;
