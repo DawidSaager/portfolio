@@ -19,6 +19,18 @@ a{
 	text-decoration: none;
 }
 
+.section-padding{
+	padding: 50px 1em;
+}
+
+.heading-section{
+	font-size: 2rem;
+	text-transform: uppercase;
+	text-align: center;
+	color:#264653;
+	padding: 1em 0;
+}
+
 .wrapper {
 	width: 100%;
 	max-width: 1200px;
@@ -177,5 +189,45 @@ a{
 		height: 100%;
 		width: 100%;
 		background-color: rgba($color: #264653, $alpha: .8);
+	}
+}
+
+.offers{
+	&__boxes{
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__box{
+		padding: 1.5em 1em;
+		// border: 2px solid #253b43;
+		
+		box-shadow: 0px 0px 10px #253b43;
+		text-align: center;
+		margin-bottom: 1.5em;
+	}
+	&__icon{
+		font-size: 5rem;
+		color: #E76F51;
+	}
+	&__box-title{
+		margin: 1em 0;
+		font-size: 2rem;
+		text-transform: uppercase;
+	}
+	&__text{
+		font-size: 1.5rem;
+		margin-bottom: 1em;
+	}
+	&__button{
+		border:3px solid #E76F51;
+		border-radius: 8px;
+		padding: .7em 1.4em;
+		background-color: transparent;
+		text-transform: uppercase;
+		font-size: 1.5rem;
+		font-weight: bold;
+		letter-spacing: 1px;
+		color: #E76F51;
 	}
 }
