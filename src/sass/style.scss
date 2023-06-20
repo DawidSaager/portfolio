@@ -151,7 +151,6 @@ a{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		width: 100%;
 		height: 100%;
 		padding: 1em;
 		font-family: 'Dancing Script', cursive;
@@ -310,6 +309,80 @@ a{
 	p{
 		text-transform: uppercase;
 		font-weight: bold;
+	}
+
+}
+
+.realizations{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	&__heading{
+		color: white;
+
+	}
+	&__slider{
+		
+		position: relative;
+		height: 200px;
+		width: 100%;
+		max-width: 600px;
+		border-radius: 6px;
+		overflow: hidden;
+	}
+	&__slider-box{
+		display: flex;
+		// justify-content: space-around;
+		transform: translateX(0);
+		transition: transform .5s;
+		height: 100%;
+		// width: 50%;
+	}
+
+	&__slider-item{
+		display: flex;
+		justify-content: center;
+		flex-shrink: 0;
+		width: 50%;
+		height: 100%;
+		background-color: white;
+		border-right: 3px solid #253b43;
+		// margin:0 5px;
+		&:first-child{
+			margin:0
+		}
+	}
+
+	.realizations__item-title{
+		padding-top: 1em;
+		text-transform: uppercase;
+	}
+
+
+	&__btn{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		padding: 0.5em 0.8em;
+		color: white;
+		background-color: rgba(0, 0, 0, .4);
+		font-size: 2rem;
+		border: none;
+		cursor: pointer;
+		&--left{
+			left:0;
+		}
+		&--right{
+			right:0;
+		}
+		& span{
+			display: block;
+			transition: transform 0.3s;
+		}
+		&:hover span{
+			transform: scale(0.7)
+		}
 	}
 
 }
