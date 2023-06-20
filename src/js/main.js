@@ -11,10 +11,26 @@ const sliderBox = document.querySelector('.realizations__slider-box')
 const leftSliderBtn = document.querySelector('.realizations__btn--left')
 const rightSliderBtn = document.querySelector('.realizations__btn--right')
 const sliderItems = document.querySelectorAll('.realizations__slider-item')
-const sliderWidth = 50
+const width = sliderItems[0].offsetWidth
+const sliderBoxWidth = sliderBox.offsetWidth
+let valueSliderLength
+
+if(sliderBoxWidth/2 == width){
+	console.log('object');
+	valueSliderLength = 2
+} else{
+	valueSliderLength = 1
+}
+
+
+const sliderWidth = width
 const sliderSpeed = 5000
 
 let index = 0
+
+
+
+
 
 const handleSlider = () => {
 	
@@ -26,13 +42,14 @@ let startSlider = setInterval(handleSlider, sliderSpeed)
 
 const changeSliderItem = () => {
 	
-	if (index > sliderItems.length - 2) {
+	
+	if (index > sliderItems.length - valueSliderLength) {
 		index = 0
 	} else if (index < 0) {
-		index = sliderItems.length - 2
+		index = sliderItems.length - valueSliderLength
 	} 
 
-	sliderBox.style.transform = `translateX(${-index * sliderWidth}%)`
+	sliderBox.style.transform = `translateX(${-index * sliderWidth}px)`
 }
 
 const handleRightArrow = () => {
