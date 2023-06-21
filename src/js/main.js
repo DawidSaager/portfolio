@@ -15,10 +15,11 @@ const width = sliderItems[0].offsetWidth
 const sliderBoxWidth = sliderBox.offsetWidth
 let valueSliderLength
 
-if(sliderBoxWidth/2 == width){
-	console.log('object');
+if( Math.floor(sliderBoxWidth/2)+1 == width || Math.floor(sliderBoxWidth/2)-1 == width){
+	console.log('tak');
 	valueSliderLength = 2
 } else{
+	console.log('nie');
 	valueSliderLength = 1
 }
 
@@ -43,10 +44,10 @@ let startSlider = setInterval(handleSlider, sliderSpeed)
 const changeSliderItem = () => {
 	
 	
-	if (index > sliderItems.length - valueSliderLength) {
+	if (index > sliderItems.length - valueSliderLength ) {
 		index = 0
 	} else if (index < 0) {
-		index = sliderItems.length - valueSliderLength
+		index = sliderItems.length - valueSliderLength 
 	} 
 
 	sliderBox.style.transform = `translateX(${-index * sliderWidth}px)`
