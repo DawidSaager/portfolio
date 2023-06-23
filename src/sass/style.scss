@@ -306,7 +306,7 @@ a{
 	}
 	i{
 		font-size: 5rem;}
-	p{
+	&__text{
 		text-transform: uppercase;
 		font-weight: bold;
 	}
@@ -390,4 +390,154 @@ a{
 		}
 	}
 
+}
+
+
+
+@media (min-width:576px){
+	.nav {
+	
+		&__logo-item {
+			font-size: 2.7rem;
+		}
+		&__item {
+			font-size: 2.7rem;
+		}
+	}
+
+	.header{
+		&__paragraph{
+			font-size: 4.5rem;
+		}
+		&__heading{
+			font-size: 2rem;
+			margin-bottom: 1.5em;
+		}
+	
+		&__button{
+			font-size: 2rem;
+		}
+	}
+
+	.offers{
+	
+		&__box{
+
+			width: 60%;
+		}
+	}
+
+	.stages{
+
+		&__box{
+			margin: 0 auto;
+			margin-bottom: 1em;
+			width: 80%;
+		}
+	}
+}
+
+@media (min-width:768px){
+	.nav {
+		&__box {
+			justify-content: space-between;
+		}
+		&__items {
+			position: relative;
+			flex-direction: row;
+			justify-content: flex-end;
+			height: 100%;
+			width: 100%;
+			transform: translateX(0);
+		}
+		&__item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0;
+			margin-bottom: 0rem;
+			width: 20%;
+			height: 100%;
+			font-size: 1.7rem;
+		}
+		.burger-btn {
+			display: none;
+		}
+	}
+
+	.header{
+		background-image: url('../img/apple-1867762_1920.jpg');
+		&__paragraph{
+			font-size: 4.8rem;
+		}
+		&__heading{
+			font-size: 2rem;
+			width: 70%;
+			margin-bottom: 1.3em;
+		}
+	
+		&__button{
+			font-size: 2rem;
+		}
+	}
+
+	.offers{
+		&__boxes{
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: stretch;
+		}
+	
+		&__box{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			width: 32%;
+		}
+	}
+
+	.stages{
+		&__boxes{
+			display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		}
+		&__box{
+			width: 50%;
+		}
+
+	}
+
+	.statistics{
+		&__counter-box{
+			display: flex;
+			// flex-direction: column;
+			align-items: center;
+			// justify-content: center;
+			flex-wrap: wrap;
+			// height: 250px;
+		}
+		&__counter-item{
+			margin: 1em;
+			// width: 200px;
+			width: 30%;
+			color: #253b43;
+			text-align: center;
+			flex-grow: 1;
+		}
+		
+		&__counter{
+			margin: 0.3em 0;
+			font-size: 6rem;
+			// font-family: 'Dancing Script', cursive;
+		}
+		i{
+			font-size: 6rem;}
+		&__text{
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 2rem;
+		}
+	
+	}
 }
