@@ -183,6 +183,11 @@ a{
 		font-size: 1.8rem;
 		font-weight: bold;
 		padding: .7em 1em;
+		cursor: pointer;
+		&:hover{
+			background-color: #E76F51;
+			color: black;
+		}
 	}
 
 	&__bg{
@@ -237,6 +242,11 @@ a{
 		font-weight: bold;
 		letter-spacing: 1px;
 		color: #E9C46A;
+		cursor: pointer;
+		&:hover{
+			color:white;
+			border:3px solid white;
+		}
 	}
 }
 
@@ -329,7 +339,7 @@ a{
 	&__slider{
 		
 		position: relative;
-		height: 200px;
+		height: 300px;
 		width: 100%;
 		max-width: 600px;
 		border-radius: 6px;
@@ -348,6 +358,7 @@ a{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
 		flex-shrink: 0;
 		width: 100%;
 		height: 100%;
@@ -355,8 +366,9 @@ a{
 		border-right: 3px solid #253b43;
 		// margin:0 5px;
 		i{
-			font-size: 7rem;
+			font-size: 10rem;
 			color: white;
+			margin-top: .1em;
 		}
 
 	}
@@ -394,6 +406,40 @@ a{
 		}
 	}
 
+}
+
+.contact{
+	&__box{
+		display: flex;
+		flex-direction: column;
+		i{
+			// color:#2A9D8F;
+			font-size: 3rem;
+			margin-right: .5em;
+		}
+		a,p{
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			color:#253b43;
+			font-size: 2.2rem;
+			margin: .7em 0;
+		}
+	}
+	&__paragraph{
+		font-size: 3rem;
+		text-align: center;
+	}
+
+}
+
+.footer{
+	padding: 1.5em 0;
+	&__bottom-text{
+		text-align: center;
+		font-size: 2rem;
+		color: #E9C46A;
+	}
 }
 
 
@@ -535,6 +581,44 @@ a{
 		&__item {
 			font-size: 1.9rem;
 		}
+	}
+	.offers{
+	
+		&__box{
+			padding: 2.5em 1em;
+		}
+		&__box-title{
+			font-size: 2.3rem;
+
+		}
+		&__icon{
+			font-size: 7rem;
+			color: #E76F51;
+		}
+		&__text{
+			font-size: 1.5rem;
+			margin-bottom: 3em;
+		}
+		&__button{
+			align-self: center;
+			width:50%;
+		}
+	}
+
+	.contact{
+		&__box{
+			display: flex;
+			flex-direction: column;
+			i{
+				font-size: 3.5rem;
+			}
+			a,p{
+				justify-content: center;
+				font-size: 3rem;
+				margin: .7em 0;
+			}
+		}
+	
 	}
 }
 
