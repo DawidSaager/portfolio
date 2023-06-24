@@ -201,6 +201,11 @@ a{
 }
 
 .offers{
+	&__paragraph{
+		text-align: justify;
+		margin-bottom: 2em;
+		font-size: 1.7rem;
+	}
 	&__boxes{
 		display: flex;
 		flex-direction: column;
@@ -531,6 +536,10 @@ a{
 	}
 
 	.offers{
+		&__paragraph{
+			margin-bottom: 2em;
+			font-size: 2.1rem;
+		}
 		&__boxes{
 			flex-direction: row;
 			justify-content: space-between;
