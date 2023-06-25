@@ -16,10 +16,9 @@ const sliderBoxWidth = sliderBox.offsetWidth
 let valueSliderLength
 
 if( Math.floor(sliderBoxWidth/2)+1 == width || Math.floor(sliderBoxWidth/2)-1 == width){
-	console.log('tak');
+
 	valueSliderLength = 2
 } else{
-	console.log('nie');
 	valueSliderLength = 1
 }
 
@@ -88,7 +87,6 @@ const options = {
 }
 
 const startCounter = entry => {
-	console.log(entry[0].isIntersecting);
 
 	if(entry[0].isIntersecting){
 		counterItems.forEach(counter => {
