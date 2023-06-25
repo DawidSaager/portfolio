@@ -166,12 +166,18 @@ a{
 			margin-bottom: .5em;
 
 		}
+		&--small{
+			font-family: 'Roboto Mono', monospace;
+			font-size: 1.8rem;
+			margin-bottom: 1.5em;
+		}
 	}
 	&__heading{
-		// color: #e9c46a;
-		font-size: 1.8rem;
+		font-size: 2.3rem;
 		font-family: 'Roboto Mono', monospace;
-		margin-bottom: 1em;
+		margin-top: 1.5em;
+		text-align: center;
+		text-transform: uppercase;
 	}
 
 	&__button{
@@ -462,10 +468,13 @@ a{
 	.header{
 		&__paragraph{
 			font-size: 4.5rem;
+			&--small{
+				font-size: 1.8rem;
+
+			}
 		}
 		&__heading{
-			font-size: 2rem;
-			margin-bottom: 1.5em;
+			font-size: 3rem;
 		}
 	
 		&__button{
@@ -523,11 +532,14 @@ a{
 		background-image: url('../img/apple-1867762_1920.jpg');
 		&__paragraph{
 			font-size: 4.8rem;
+			&--small{
+				font-size: 2rem;
+
+			}
 		}
 		&__heading{
-			font-size: 2rem;
-			width: 70%;
-			margin-bottom: 1.3em;
+			font-size: 3.6rem;
+			margin-top: 1em;
 		}
 	
 		&__button{
@@ -640,9 +652,13 @@ a{
 	.header{
 		&__paragraph{
 			font-size: 5rem;
+			&--small{
+				font-size: 2.3rem;
+
+			}
 		}
 		&__heading{
-			font-size: 2.4rem;
+			font-size: 4rem;
 		}
 
 	}
